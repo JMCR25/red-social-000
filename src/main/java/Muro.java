@@ -2,11 +2,9 @@ import java.util.ArrayList;
 
 public class Muro
 {
-    // Entradas de texto
     private ArrayList <Entrada> entradas;
 
     public Muro() {
-        //Inicializa mensajes y fotos.
         entradas = new ArrayList<>();
     }
 
@@ -19,9 +17,8 @@ public class Muro
     public String toString() {
         String aDevolver = "";
 
-        // Buscamos todas las entradas de texto.
         for (Entrada entrada : entradas) {
-            aDevolver += entrada + "\n\n";
+            aDevolver += entrada + "\n" + "\n";
         }
 
         return aDevolver;
