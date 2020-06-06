@@ -17,12 +17,13 @@ public class MuroTest {
         EntradaFoto entrada02 = new EntradaFoto("Luis", "https://bit.ly/2W1dO09", "Gracias");
         EntradaTexto entrada03 = new EntradaTexto("Begoña", "Está lloviendo ahí fuera...");
         EntradaFoto entrada04 = new EntradaFoto("Cristina", "https://bit.ly/3cY9vtD", "Una foto de mi nevera");
+        EntradaEvento entrada05 = new EntradaEvento("Chema", "Ha iniciado sesion");
 
         muro.addEntrada(entrada01);
         muro.addEntrada(entrada02);
         muro.addEntrada(entrada03);
         muro.addEntrada(entrada04);
-
+        muro.addEntrada(entrada05);
         System.out.println(muro);
     }
 
