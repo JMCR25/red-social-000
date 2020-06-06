@@ -18,10 +18,10 @@ public class MuroTest {
         EntradaTexto entrada03 = new EntradaTexto("Begoña", "Está lloviendo ahí fuera...");
         EntradaFoto entrada04 = new EntradaFoto("Cristina", "https://bit.ly/3cY9vtD", "Una foto de mi nevera");
 
-        muro.addEntradaTexto(entrada01);
-        muro.addEntradaFoto(entrada02);
-        muro.addEntradaTexto(entrada03);
-        muro.addEntradaFoto(entrada04);
+        muro.addEntrada(entrada01);
+        muro.addEntrada(entrada02);
+        muro.addEntrada(entrada03);
+        muro.addEntrada(entrada04);
 
         System.out.println(muro);
     }

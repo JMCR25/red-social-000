@@ -16,15 +16,23 @@ public class EntradaTexto extends Entrada
 {
     // Contenido de la entrada.
     private String mensaje;
+    // Comentarios de la entrada.
+    private ArrayList<String> comentarios;
 
     public EntradaTexto (String autor, String texto) {
         super(autor);
         mensaje = texto;
+        comentarios = new ArrayList<>();
     }
 
     public String getMensaje() {
         return mensaje;
     }
+
+
+    public void addComentario(String textoComentario) {
+    comentarios.add(textoComentario);
+}
 
 
 
@@ -49,12 +57,12 @@ public class EntradaTexto extends Entrada
         aDevolver += "\n";
 
         // Comprobamos si hay comentarios. Si hay los mostramos, si no, mostramos un mensaje indicandolo.
-        if (getComentarios().size() == 0)         {
+        if (comentarios.size() == 0)         {
             aDevolver += "No hay comentarios\n";
         }
         else {
             aDevolver += "Comentarios: \n";
-            for(String comentarioActual : getComentarios()){
+            for(String comentarioActual : comentarios){
                 aDevolver += comentarioActual + "\n";
             }
         }

@@ -18,14 +18,12 @@ public class Entrada {
     private LocalDateTime momentoPublicacion;
     // Numero de 'me gusta' de la entrada.
     private int cantidadMeGusta;
-    // Comentarios de la entrada.
-    private ArrayList<String> comentarios;
+
 
     public Entrada(String autor) {
         usuario = autor;
         momentoPublicacion = LocalDateTime.now();
         cantidadMeGusta = 0;
-        comentarios = new ArrayList<>();
     }
     public String getUsuario(){
         return usuario;
@@ -35,16 +33,10 @@ public class Entrada {
         return cantidadMeGusta;
     }
 
-    public ArrayList<String> getComentarios() {
-        return comentarios;
-    }
-
     public void meGusta() {
         cantidadMeGusta += 1;
     }
-    public void addComentario(String textoComentario) {
-        comentarios.add(textoComentario);
-    }
+
     public LocalDateTime getMomentoPublicacion() {
         return momentoPublicacion;
     }
