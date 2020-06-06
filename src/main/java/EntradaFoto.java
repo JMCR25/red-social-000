@@ -82,4 +82,5 @@ public class EntradaFoto extends Entrada
 
         return aDevolver;
     }
+
 }

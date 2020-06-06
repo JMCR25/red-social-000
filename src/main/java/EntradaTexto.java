@@ -61,4 +61,7 @@ public class EntradaTexto extends Entrada
 
         return aDevolver;
     }
+    public void mostrarAutorYMensaje() {
+        System.out.println("Autor: " + getUsuario() + "\n" + "Mensaje: " + mensaje);
+    }
 }
