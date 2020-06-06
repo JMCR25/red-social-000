@@ -23,6 +23,8 @@ public class Entrada {
     public void meGusta() {
         cantidadMeGusta += 1;
     }
+    public void mostrarDetallesPorPantalla() {
+    }
 
     public LocalDateTime getMomentoPublicacion() {
         return momentoPublicacion;

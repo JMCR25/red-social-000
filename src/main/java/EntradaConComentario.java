@@ -14,6 +14,8 @@ public class EntradaConComentario extends Entrada {
     public void addComentario(String text) {
         comentarios.add(text);
     }
+    public void mostrarDetallesPorPantalla() {
+    }
 
     @Override
     public String toString() {

@@ -12,7 +12,11 @@ public class Muro
         entradas.add(entrada);
     }
 
-
+    public void mostrarDetallesTodasLasEntradas() {
+        for (Entrada entrada : entradas) {
+            entrada.mostrarDetallesPorPantalla();
+        }
+    }
     @Override
     public String toString() {
         String aDevolver = "";

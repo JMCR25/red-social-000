@@ -16,6 +16,9 @@ public class EntradaTexto extends EntradaConComentario
         getComentarios().add(textoComentario);
 }
 
+    public void mostrarDetallesPorPantalla() {
+        System.out.println(mensaje);
+    }
     @Override
     public String toString() {
         String aDevolver = "";

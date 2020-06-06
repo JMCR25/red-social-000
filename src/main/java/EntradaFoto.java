@@ -23,6 +23,9 @@ public class EntradaFoto extends EntradaConComentario
         return titulo;
     }
 
+    public void mostrarDetallesPorPantalla() {
+        System.out.println(urlImagen + "\n" + titulo);
+    }
 
     @Override
     public String toString() {
