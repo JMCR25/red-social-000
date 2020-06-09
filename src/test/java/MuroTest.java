@@ -60,6 +60,7 @@ public class MuroTest {
                 "\n" +
                 "\n" +
                 "\n" );
+        muro.getUrlsFotos();
     }
 
 }

@@ -17,6 +17,22 @@ public class Muro
             entrada.mostrarDetallesPorPantalla();
         }
     }
+    public String[] getUrlsFotos() {
+        String contenedor = "";
+        int tamano = entradas.size();
+        String[] url = new String[tamano];
+        int cont = 0;
+        for (Entrada entrada : entradas) {
+            if(entrada instanceof EntradaFoto) {
+                cont++;
+                EntradaFoto foto = (EntradaFoto)entrada;
+                url[cont] = foto.getUrlImagen() + "\n";
+                contenedor += foto.getUrlImagen() + "\n";
+            }
+        }
+        System.out.println(contenedor);
+        return url;
+    }
     @Override
     public String toString() {
         String aDevolver = "";
